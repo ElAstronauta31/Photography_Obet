@@ -1,0 +1,20 @@
+.nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+.navUl {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLi {
+    font-size: 24px;
+    margin: 3vw;
+}
