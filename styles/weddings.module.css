@@ -1,0 +1,57 @@
+.div {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.divDiv {
+    grid-column:  1 / 2 ;
+}
+
+.horizontalDiv {
+    grid-column: 1 / -1;
+}
+
+.divLeft {
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-auto-rows: min-content;
+    gap: 10px;
+}
+
+.divRight {
+    display: grid;
+    grid-column: span 1 / -1;
+    grid-auto-rows: min-content;
+    gap: 10px;
+}
+
+.div2 {
+    position: relative;
+    width: 200px;
+    height: 250px;
+}
+
+.div3 {
+    position: relative;
+    width: 200px;
+    height: 133px;
+}
+
+.img {
+    object-fit: cover;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.horizontal {
+    margin-left: 5px;
+    grid-column: span 2;
+    position: relative;
+    width: 400px;
+    height: 267px;
+}
