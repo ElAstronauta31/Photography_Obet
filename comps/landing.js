@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Landing() {
     return (
-      <div>
+      <div className={styles.landing} id='landing'>
         <div className={styles.landingInfo}>
           <div className={styles.info}>
             <h1>Adam's Photography</h1>

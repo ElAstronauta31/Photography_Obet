@@ -1,57 +1,187 @@
-.div {
-    position: relative;
-    width: 200px;
-    height: 300px;
-}
-
-.divDiv {
-    grid-column:  1 / 2 ;
-}
-
-.horizontalDiv {
-    grid-column: 1 / -1;
-}
-
-.divLeft {
+.gridContainerMain {
     display: grid;
-    grid-column: 1 / span 1;
-    grid-auto-rows: min-content;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 5px;
+    width:360px;
+    justify-content: center;
+    margin: auto;
+    max-height: auto;
 }
 
-.divRight {
+.gridContainerItemCenter {
+    display: grid;
+    grid-column: span 2;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridItemOne {
+    position: relative;
+    width: 170px;
+    height: 255px;
+}
+
+.horizontalGridItem {
+    margin-left: 2.5px;
+    grid-column: span 2;
+    position: relative;
+    width: 340px;
+    height: 227px;
+}
+
+.gridContainerItemLeft {
+    display: grid;
+    grid-column:  1 / span 1;
+    grid-auto-rows: min-content;
+    gap: 5px;
+    margin-left: 8px;
+}
+
+
+.gridContainerItemRight {
     display: grid;
     grid-column: span 1 / -1;
     grid-auto-rows: min-content;
-    gap: 10px;
+    gap: 5px;
 }
 
-.div2 {
+.gridItemTwo {
     position: relative;
-    width: 200px;
-    height: 250px;
+    width: 170px;
+    height: 212px;
 }
 
-.div3 {
+.gridItemThree {
     position: relative;
-    width: 200px;
-    height: 133px;
+    width: 170px;
+    height: 113px;
 }
 
 .img {
     object-fit: cover;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+@media (min-width: 450px) {
+    .gridContainerMain {
+        gap: 10px;
+        width:400px;
+    }
+
+    .gridItemOne {
+        width: 200px;
+        height: 300px;
+    }
+
+    .gridContainerItemCenter {
+        gap: 10px;
+    }
+
+    .horizontalGridItem {
+        margin-left: 5px;
+        width: 400px;
+        height: 267px;
+    }
+
+    .gridContainerItemLeft {
+        gap: 10px;
+        margin-left: 0px;
+    }
+
+    .gridContainerItemRight {
+        gap: 10px;
+    }
+
+    .gridItemTwo {
+        width: 200px;
+        height: 250px;
+    }
+
+    .gridItemThree {
+        width: 200px;
+        height: 133px;
+    }
 }
 
-.horizontal {
-    margin-left: 5px;
-    grid-column: span 2;
-    position: relative;
-    width: 400px;
-    height: 267px;
+@media (min-width: 810px) {
+    .gridContainerMain {
+        gap: 20px;
+        width: 600px;
+    }
+
+    .gridItemOne {
+        width: 300px;
+        height: 450px;
+    }
+
+    .horizontalGridItem {
+        margin-left: 10px;
+        width: 600px;
+        height: 400px;
+    }
+
+    .gridContainerItemCenter {
+        gap: 20px;
+    }
+
+    .gridContainerItemLeft {
+        gap: 20px;
+    }
+
+    .gridContainerItemRight {
+        gap: 20px;
+    }
+
+    .gridItemTwo {
+        width: 300px;
+        height: 375px;
+    }
+
+    .gridItemThree {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 1050px) {
+    .gridContainerMain {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        width: 900px;
+    }
+
+    .gridItemOne {
+        width: 300px;
+        min-height: 200px;
+    }
+
+    .horizontalGridItem {
+        display: grid;
+        margin-left: 0px;
+        grid-column: span 1 / -1;
+        grid-auto-rows: min-content;
+        width: 300px;
+        height: 200px;
+    }
+
+    .gridContainerItemCenter {
+        grid-column: span 1;
+        grid-auto-rows: min-content;
+    }
+
+    .gridContainerItemLeft {
+        grid-column: 2 / span 1;
+    }
+
+
+    .gridItemTwo {
+        width: 300px;
+        height: 375px;
+    }
+
+    .gridItemThree {
+        width: 300px;
+        height: 200px;
+    }
 }

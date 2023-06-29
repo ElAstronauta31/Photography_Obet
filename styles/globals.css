@@ -22,7 +22,9 @@ body {
 }
 
 body {
-  
+  /* background-image: url('/images/bailey_hero.jpg'); */
+  background-size: cover;
+  background-position: center;
 }
 
 a {
