@@ -4,7 +4,9 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 10vh;
+    height: 7vh;
+    background-color: #fffffff7;
+    color: black;
 }
 
 .navUl {
